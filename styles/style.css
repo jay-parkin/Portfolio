@@ -19,6 +19,7 @@ body {
   background-color: white;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 header {
@@ -34,26 +35,64 @@ header {
   border-bottom: 1px solid var(--outer-space);
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: flex-end;
-}
-
 nav {
-  margin: 0.5em;
+  width: 40vw;
+  margin-right: 25px;
+  color: var(--outer-space);
 }
 
-nav > a {
-  margin-right: 1em;
-  text-decoration: none;
-  background-color: var(--outer-space);
+.navlink {
   color: var(--timberwolf);
-  padding: 0.25em;
-  border-radius: 0.5em;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition-duration: 0.5s;
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
 }
 
-nav > a:hover {
-  background-color: var(--outer-space);
+.navlink:hover {
+  background-color: var(--ash-gray);
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.menu-btn {
+  display: flex;
+  background: transparent;
+  border: none;
+  z-index: 100;
+  width: 100%;
+}
+
+.menu-btn .hamburgicon {
+  max-width: 50px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.menu-btn .hamburgicon:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.menu-closed {
+  display: none;
+  background-color: #7e8d85;
+  opacity: 90%;
+  border-radius: 20px;
+  width: 40vw;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
 }
 
 .portfolio-logo > img {
@@ -91,119 +130,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* resourced from https://alvarotrigo.com/blog/hamburger-menu-css/ */
-label .menu {
-  position: absolute; /* Adjusted position */
-  right: 0;
-  top: 0;
-  z-index: 100;
-  width: 100px;
-  height: 10vh;
-  background: #fff;
-  border-radius: 50% 0% 0% 50%;
-  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Transition width and height */
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-  cursor: pointer;
-}
-
-/* Middle bar of the menu */
-label .hamburger {
-  position: absolute;
-  top: 45px;
-  left: 40px;
-  width: 30px;
-  height: 2px;
-  background: var(--outer-space);
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-/*  Top and bottom bars of the menu */
-label .hamburger:after,
-label .hamburger:before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  content: "";
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: var(--outer-space);
-}
-
-label .hamburger:before {
-  top: -10px;
-}
-
-label .hamburger:after {
-  bottom: -10px;
-}
-
-label input {
-  display: none;
-}
-
-label input:checked + .menu {
-  width: 100vw; /* Expand width to full viewport width */
-  height: 100vh; /* Expand height to full viewport height */
-  border-radius: 0; /* Remove circular border-radius */
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  top: 0;
-}
-
-label input:checked + .menu + ul {
-  opacity: 1;
-}
-
-label ul {
-  z-index: 200;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: 0.25s 0s ease-in-out;
-  transition: 0.25s 0s ease-in-out;
-}
-
-label a {
-  margin-bottom: 1em;
-  display: block;
-  color: var(--outer-space);
-  text-decoration: none;
-}
-
-/* Media query for even smaller viewports */
-@media screen and (min-width: 600px) {
-  label .menu {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav-bar {
-    display: none;
-  }
 }

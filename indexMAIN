@@ -22,17 +22,31 @@
             </figure>
         </section>
 
-        <nav>
-            <button class="menu-btn">
-                <img src="assets/hamburger-menu.png" class="hamburgicon" onclick="toggleMenu()" />
-            </button>
-            <div id="menu-nav" class="menu-closed">
-                <button class="navlink">About Me</button>
-                <button class="navlink">Projects</button>
-                <button class="navlink">Blog</button>
-                <button class="navlink">Contact</button>
-            </div>
+        <!-- For wider view ports -->
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+
         </nav>
+
+        <!-- For mobile nav -->
+        <label>
+            <input type="checkbox">
+            <div class="menu">
+                <div class="hamburger"></div>
+            </div>
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Projects</a> </li>
+                <li> <a href="#">Blog</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </label>
+
     </header>
 
     <main>
