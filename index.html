@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js"></script>
 
-    <!-- resourced from w3schools -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Resourced from Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Document</title>
 </head>
 
@@ -22,32 +24,36 @@
             </figure>
         </section>
 
+        <!-- Aligned to the right of the header -->
         <nav>
             <button class="menu-btn">
-                <img src="assets/hamburger-menu.png" class="hamburgicon" onclick="toggleMenu()" />
+                <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
             </button>
-            <div id="menu-nav" class="menu-closed">
+            <!-- <button class="menu-btn">
+                <img src="assets/menu-open.png" class="hamburgicon" onclick="toggleMenu()" />
+            </button> -->
+            <section id="menu-nav" class="menu-closed">
                 <button class="navlink">About Me</button>
                 <button class="navlink">Projects</button>
                 <button class="navlink">Blog</button>
                 <button class="navlink">Contact</button>
-            </div>
+            </section>
         </nav>
     </header>
 
     <main>
+        <!-- Show a pic of myself -->
         <section>
-            <!-- Aligned to the left of the header -->
             <figure id="developer-home-image">
                 <img src="assets/image-missing.png" alt="photo of the developer" />
             </figure>
         </section>
 
         <h1>Homepage</h1>
-
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum porro asperiores incidunt. Quam
-            expedita fugit minus cum repellendus numquam? Harum sapiente pariatur ab sunt non voluptates alias nostrum
+            expedita fugit minus cum repellendus numquam? Harum sapiente pariatur ab sunt non voluptates alias
+            nostrum
             animi?
         </p>
 
