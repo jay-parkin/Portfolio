@@ -88,10 +88,10 @@ nav {
   margin-left: auto;
 } */
 
-.menu-btn .hamburgicon:hover {
+/* .menu-btn .hamburgicon:hover {
   opacity: 50%;
   cursor: pointer;
-}
+} */
 
 .menu-closed {
   display: none;
