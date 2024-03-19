@@ -75,6 +75,7 @@ nav {
   font-size: 3rem;
   max-width: 50px;
   margin-left: auto;
+  color: var(--outer-space);
 }
 
 .menu-btn .material-symbols-outlined:hover {
@@ -129,9 +130,31 @@ main > * {
   margin: 1em;
 }
 
+.intro-personal {
+  max-width: 60%;
+  margin: auto;
+}
+
+/* p {
+  word-wrap: break-word;
+} */
+
 #developer-home-image img {
   height: 30dvh;
   object-fit: cover;
+  border-radius: 20%;
+  box-shadow: 5px 5px var(--outer-space);
+}
+
+.learn-more-btn {
+  background-color: var(--timberwolf);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 5px 5px var(--outer-space);
 }
 
 footer {
