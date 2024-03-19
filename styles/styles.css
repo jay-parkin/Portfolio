@@ -46,7 +46,7 @@ nav {
   text-decoration: none;
   font-size: 1.3rem;
   transition-duration: 0.5s;
-  width: 100%;
+  /* width: 100%; */
   padding: 15px;
   margin: auto;
   text-align: center;
@@ -167,4 +167,13 @@ footer {
 /*
 Bring out the nav links on desktop view 
 Set a word wrap length on desktop 60% - 70%
+
+.menu-closed {
+    display: none;
+    background-color: #7e8d85;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 40vw;
+}
+Width needs to change for desktop view
 */
