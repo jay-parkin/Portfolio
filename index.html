@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/script.js"></script>
 
     <!-- Resourced from Google Fonts -->
@@ -26,7 +27,8 @@
         <section>
             <figure>
                 <a href="index.html" class="logo">
-                    <img src="assets/logo-jp.png" alt="Logo JP" class="logo-jp" /><img src="assets/logo-ring.png" alt="Logo Ring" class="logo-ring" /></a>
+                    <img src="assets/logo-jp.png" alt="Logo JP" class="logo-jp" /><img src="assets/logo-ring.png"
+                        alt="Logo Ring" class="logo-ring" /></a>
             </figure>
         </section>
 
@@ -40,28 +42,36 @@
             <!-- Nav menu -->
             <section id="menu-nav" class="menu-closed">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="pages/about.html" class="nav-link">About Me</a>
+                <a href="pages/about.html" class="nav-link">About</a>
+                <a href="#" class="nav-link">Projects</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Contact</a>
             </section>
         </nav>
     </header>
 
     <main>
         <!-- Quick introduction -->
-        <h1 id="welcome">Welcome!</h1>
         <section class="intro-personal">
-            <p>
-                Hello there! I'm Jason Parkin, a passionate software developer based in Sydney, Australia.
-            </p>
+            <h1 class="welcome">Welcome!</h1>
+            <section>
+                <p>
+                    Hello there! I'm Jason Parkin, a passionate software developer based in Sydney, Australia.
+                </p>
+            </section>
         </section>
 
         <!-- Show a pic of myself -->
         <section>
-            <figure id="developer-home-image">
+            <figure class="developer-home-image">
                 <img src="assets/dev.jpg" alt="photo of the developer" />
             </figure>
         </section>
 
-        <a href="pages/about.html" class="learn-more-btn">Learn more about me</a>
+        <section>
+            <a href="pages/about.html" class="learn-more-btn">Learn more about me</a>
+        </section>
+
     </main>
 
     <footer>
