@@ -7,11 +7,18 @@
   --outer-space: #4a5759ff; */
 
   /* CSS HEX Blue */
-  --federal-blue: #03045eff;
+  /* --federal-blue: #03045eff;
   --honolulu-blue: #0077b6ff;
   --pacific-cyan: #00b4d8ff;
   --non-photo-blue: #90e0efff;
-  --light-cyan: #caf0f8ff;
+  --light-cyan: #caf0f8ff; */
+
+  /* CSS HEX Darker Blue */
+  --picton-blue: #00a6fbff;
+  --steel-blue: #0582caff;
+  --lapis-lazuli: #006494ff;
+  --prussian-blue: #003554ff;
+  --rich-black: #051923ff;
 
   /* 
   light cyan font on honolulu
@@ -29,7 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  color: var(--honolulu-blue);
+  color: var(--rich-black);
 
   justify-content: center;
   align-items: center;
@@ -37,7 +44,7 @@ body {
 }
 
 header {
-  background-color: var(--honolulu-blue);
+  background-color: var(--lapis-lazuli);
   height: 10vh;
   width: 100%;
 
@@ -46,7 +53,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: 1px solid var(--federal-blue);
+  border-bottom: 1px solid var(--rich-black);
 }
 
 nav {
@@ -56,7 +63,7 @@ nav {
 }
 
 .nav-link {
-  color: var(--honolulu-blue);
+  color: white;
   text-decoration: none;
   font-size: 1.3rem;
   transition-duration: 0.5s;
@@ -70,7 +77,7 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: var(--light-cyan);
+  background-color: var(--picton-blue);
   cursor: pointer;
   opacity: 70%;
 }
@@ -89,7 +96,8 @@ nav {
   font-size: 3rem;
   max-width: 50px;
   margin-left: auto;
-  color: var(--non-photo-blue);
+  color: white;
+  opacity: 70%;
 }
 
 .menu-btn .material-symbols-outlined:hover {
@@ -99,7 +107,7 @@ nav {
 
 .menu-closed {
   display: none;
-  background-color: var(--non-photo-blue);
+  background-color: var(--steel-blue);
   opacity: 90%;
   border-radius: 20px;
   width: 40vw;
@@ -143,27 +151,27 @@ section > .intro-personal {
   height: 30dvh;
   object-fit: cover;
   border-radius: 20%;
-  box-shadow: 5px 5px var(--non-photo-blue);
+  box-shadow: 5px 5px var(--lapis-lazuli);
 }
 
 .learn-more-btn {
-  background-color: var(--honolulu-blue);
-  color: var(--light-cyan);
+  background-color: var(--steel-blue);
+  color: white;
   font-size: 1.3rem;
   border: none;
   padding: 10px 30px;
   border-radius: 50px;
-  box-shadow: 5px 5px var(--non-photo-blue);
+  box-shadow: 5px 5px var(--lapis-lazuli);
 }
 
 .learn-more-btn:hover {
-  background-color: var(--pacific-cyan);
+  background-color: var(--picton-blue);
   cursor: pointer;
   opacity: 70%;
 }
 
 footer {
-  background-color: var(--honolulu-blue);
+  background-color: var(--lapis-lazuli);
   color: var(--light-cyan);
   height: 10dvh;
   width: 100%;
@@ -177,6 +185,10 @@ footer {
 
 .socials-icon {
   height: 5dvh;
+}
+
+h6 {
+  color: white;
 }
 
 /*
