@@ -2,29 +2,34 @@
   text-align: left;
 }
 
+.bio-images {
+  width: 100vw;
+  margin: 1;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .bio-darts img,
 .bio-smoker img {
-  height: 20vh;
-  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: clamp(150px, 60%, 350px);
   border-radius: 5%;
-  box-shadow: 8px 8px var(--lapis-lazuli);
-}
-.bio-smoker {
-  width: clamp(180px, 60%, 350px);
-  display: block;
-  margin: auto;
-  position: relative;
-  left: 50px;
-  margin-bottom: 2em;
+
+  /* box-shadow: 8px 8px var(--lapis-lazuli); */
 }
 
 .bio-darts {
-  width: clamp(180px, 60%, 350px);
-  display: block;
-  margin: auto;
-  position: relative;
-  right: 60px;
-  top: 20px;
+  margin-left: 2em;
+}
+
+.bio-smoker {
+  margin-right: 3em;
   z-index: -1;
 }
 

@@ -38,6 +38,7 @@ body {
   background-color: white;
   color: var(--rich-black);
 
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
@@ -50,10 +51,15 @@ header {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   border-bottom: 1px solid var(--rich-black);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 /* Creates a logo with a spinning animation */
@@ -144,6 +150,7 @@ nav {
 }
 
 main {
+  margin-top: 10vh;
   min-height: 80vh;
   width: 100%;
   text-align: center;
@@ -177,9 +184,12 @@ p {
   margin-bottom: 3em;
 }
 
+.home-image {
+  width: 80vw;
+}
+
 .developer-home-image img {
-  height: 30vh;
-  object-fit: cover;
+  width: clamp(180px, 60%, 350px);
   border-radius: 5%;
   box-shadow: 8px 8px var(--lapis-lazuli);
 }
@@ -224,7 +234,7 @@ footer {
 }
 
 .socials-icon {
-  height: 5dvh;
+  max-height: 5dvh;
 }
 
 h6 {
