@@ -1,3 +1,28 @@
 .bio-aboutme {
   text-align: left;
 }
+
+.bio-darts img,
+.bio-smoker img {
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 5px 5px var(--lapis-lazuli);
+}
+.bio-smoker {
+  width: clamp(180px, 60%, 350px);
+  display: block;
+  margin: auto;
+  position: relative;
+  left: 50px;
+}
+
+.bio-darts {
+  width: clamp(180px, 60%, 350px);
+  display: block;
+  margin: auto;
+  position: relative;
+  right: 60px;
+  top: 20px;
+  z-index: -1;
+}

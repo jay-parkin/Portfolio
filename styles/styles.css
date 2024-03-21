@@ -158,6 +158,14 @@ main > * {
   margin: 1em;
 }
 
+p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .welcome {
   margin-top: 2em;
   margin-bottom: 2em;
