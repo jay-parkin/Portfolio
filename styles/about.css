@@ -7,7 +7,7 @@
   height: 20vh;
   object-fit: cover;
   border-radius: 5%;
-  box-shadow: 5px 5px var(--lapis-lazuli);
+  box-shadow: 8px 8px var(--lapis-lazuli);
 }
 .bio-smoker {
   width: clamp(180px, 60%, 350px);
@@ -15,6 +15,7 @@
   margin: auto;
   position: relative;
   left: 50px;
+  margin-bottom: 2em;
 }
 
 .bio-darts {
@@ -25,4 +26,74 @@
   right: 60px;
   top: 20px;
   z-index: -1;
+}
+
+.list-aboutme li {
+  text-align: left;
+}
+
+.skill-title {
+  color: var(--steel-blue);
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: disc;
+  background-color: var(--steel-blue);
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  box-shadow: 8px 8px var(--lapis-lazuli);
+
+  padding: 10px 30px;
+  padding-top: 1.2em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  margin-bottom: 2em;
+}
+
+.sub-list {
+  /* padding-top: 1rem; */
+  padding-left: 1rem;
+}
+
+.list {
+  line-height: 1.4rem;
+  margin-top: 0.5em;
+  padding-bottom: 1rem;
+}
+
+main .skills li {
+  position: relative;
+  list-style: none;
+  border-left: 1px solid white;
+
+  padding-bottom: 1rem;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+/* Custom disc Icons */
+.list-aboutme li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 2px solid var(--picton-blue);
+  box-shadow: 3px 3px 0px var(--lapis-lazuli);
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -1em;
+}
+
+.skills li:last-child {
+  position: relative;
+  list-style: none;
+  border-left: 0px solid white;
+  padding-bottom: 1.4rem;
+  padding-left: 10px;
+  margin-left: 10px;
 }
