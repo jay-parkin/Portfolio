@@ -51,7 +51,6 @@ ul {
   color: white;
   font-size: 1.3rem;
   border-radius: 20px;
-  box-shadow: 8px 8px var(--lapis-lazuli);
 
   padding: 10px 30px;
   padding-top: 1.2em;
@@ -61,7 +60,6 @@ ul {
 }
 
 .sub-list {
-  /* padding-top: 1rem; */
   padding-left: 1rem;
 }
 

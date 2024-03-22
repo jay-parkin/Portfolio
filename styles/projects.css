@@ -1,0 +1,40 @@
+.portfolio {
+  width: 100%;
+}
+
+.project {
+  width: 100%;
+  background-color: var(--blue-light);
+  margin-top: 1em;
+  margin-bottom: 3em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project img {
+  width: 40vh;
+  /* margin-top: 1em; */
+  border: 2px solid black;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+@media screen and (min-width: 500px) {
+  .portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .project {
+    width: 45dvw;
+    height: 50dvh;
+  }
+}
