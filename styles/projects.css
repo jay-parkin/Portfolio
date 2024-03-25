@@ -35,6 +35,6 @@
 
   .project {
     width: 45dvw;
-    height: 50dvh;
+    /* height: 50dvh; */
   }
 }
