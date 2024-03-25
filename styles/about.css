@@ -1,13 +1,17 @@
+.main-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .bio-aboutme {
   text-align: left;
 }
 
 .bio-images {
-  width: 100vw;
-  margin: 1;
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: center;
 }
@@ -17,20 +21,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  width: clamp(150px, 60%, 350px);
+  width: 100%;
+  /* width: clamp(150px, 60%, 350px); */
   border-radius: 5%;
-
-  /* box-shadow: 8px 8px var(--lapis-lazuli); */
-}
-
-.bio-darts {
-  margin-left: 2em;
-}
-
-.bio-smoker {
-  margin-right: 3em;
-  z-index: -1;
 }
 
 .list-aboutme li {
@@ -38,7 +31,7 @@
 }
 
 .skill-title {
-  color: var(--steel-blue);
+  color: var(--rich-black);
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
@@ -47,16 +40,19 @@
 
 ul {
   list-style-type: disc;
-  background-color: var(--steel-blue);
-  color: white;
+  color: var(--rich-black);
   font-size: 1.3rem;
+  border: 5px solid var(--steel-blue);
   border-radius: 20px;
-
   padding: 10px 30px;
   padding-top: 1.2em;
   margin-left: 1.3em;
   margin-right: 1.3em;
   margin-bottom: 2em;
+}
+
+ul:hover {
+  box-shadow: 8px 8px var(--lapis-lazuli);
 }
 
 .sub-list {
@@ -72,7 +68,7 @@ ul {
 main .skills li {
   position: relative;
   list-style: none;
-  border-left: 1px solid white;
+  border-left: 3px solid var(--steel-blue);
 
   padding-bottom: 1rem;
   padding-left: 10px;
@@ -85,7 +81,7 @@ main .skills li {
   width: 15px;
   height: 15px;
   background: white;
-  border: 2px solid var(--picton-blue);
+  border: 2px solid var(--steel-blue);
   box-shadow: 3px 3px 0px var(--lapis-lazuli);
   border-radius: 50%;
   position: absolute;
@@ -99,4 +95,17 @@ main .skills li {
   padding-bottom: 1.4rem;
   padding-left: 10px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .main-bio {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio-darts img,
+  .bio-smoker img {
+    box-shadow: 8px 8px var(--lapis-lazuli);
+  }
 }
