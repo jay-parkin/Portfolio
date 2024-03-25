@@ -253,6 +253,26 @@ h6 {
     justify-content: flex-end;
     background-color: transparent;
   }
+
+  header {
+    height: 10vh;
+  }
+
+  main {
+    /* height: 100vh; */
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  .logo-jp,
+  .logo-ring {
+    top: 0.8em;
+    left: 1em;
+    height: 7vh;
+    position: absolute;
+  }
 }
 
 /*
