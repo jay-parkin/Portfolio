@@ -12,7 +12,11 @@
   margin-top: 1em;
   margin-bottom: 3em;
   padding-bottom: 1em;
-  /* border-bottom: 1px solid black; */
+
+  border-radius: 10px;
+  border: 2px solid var(--steel-blue);
+  box-shadow: 0 0 10px var(--steel-blue);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,8 +26,7 @@
 .blog-post img {
   width: 100%;
   margin-top: 1em;
-  border: 1px solid black;
-  /* margin-left: 1em; */
+
   margin-bottom: 1em;
 }
 
@@ -33,6 +36,7 @@
 
 .post-article h6 {
   color: black;
+  margin-bottom: 1em;
 }
 
 @media screen and (min-width: 500px) {
@@ -43,12 +47,16 @@
   }
 
   .blog-post {
-    border: 2px solid var(--rich-black);
+    box-shadow: 0 0 10px var(--steel-blue);
     width: 45dvw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .post-article h2 {
+    margin-top: 1em;
   }
 }
 

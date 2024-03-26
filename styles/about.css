@@ -75,6 +75,14 @@ main .skills li {
   margin-left: 10px;
 }
 
+.dev-pro,
+.edu-per {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Custom disc Icons */
 .list-aboutme li:before {
   content: "";
@@ -104,8 +112,20 @@ main .skills li {
     justify-content: center;
   }
 
+  .bio-aboutme {
+    width: 80%;
+  }
+
   .bio-darts img,
   .bio-smoker img {
     box-shadow: 8px 8px var(--lapis-lazuli);
+  }
+
+  .dev-pro,
+  .edu-per {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 }

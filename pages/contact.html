@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 
     <!-- Linked for the menu -->
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 
     <!-- Resourced from Google Fonts -->
     <link rel="stylesheet"
@@ -27,9 +28,9 @@
         <!-- ANimated logo -->
         <section>
             <figure>
-                <a href="index.html" class="logo">
-                    <img src="assets/logo-jp.png" alt="Logo JP" class="logo-jp" /><img src="assets/logo-ring.png"
-                        alt="Logo Ring" class="logo-ring" /></a>
+                <a href="../index.html" class="logo">
+                    <img src="../assets/logo-jp.png" alt="Logo JP" class="logo-jp" />
+                    <img src="../assets/logo-ring.png" alt="Logo Ring" class="logo-ring" /></a>
             </figure>
         </section>
 
@@ -42,35 +43,31 @@
 
             <!-- Nav menu -->
             <section id="menu-nav" class="menu-closed">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="pages/about.html" class="nav-link">About</a>
-                <a href="pages/projects.html" class="nav-link">Projects</a>
-                <a href="pages/blog.html" class="nav-link">Blog</a>
-                <a href="pages/contact.html" class="nav-link">Contact</a>
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </section>
         </nav>
     </header>
 
     <main>
-        <!-- Quick introduction -->
-        <section class="intro-personal">
-            <h1 class="welcome">Welcome!</h1>
-            <section>
-                <p>
-                    Hello there! I'm Jason Parkin, a passionate software developer based in Sydney, Australia.
+
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+
+            <p>
+                If you feel like contacting me, please leave me your information below.
+            </p>
+
+            <form action="#" method="post" class="form">
+                    <input type="text" class="field" name="name" placeholder="Name" required>
+                    <input type="email" class="field" name="email" placeholder="Email" required>
+                    <textarea class="message" placeholder="Message" rows="10"></textarea>
+                    <input type="submit" value="Send Message" class="standard-blue-btn">
                 </p>
-            </section>
-        </section>
-
-        <!-- Show a pic of myself -->
-        <section class="home-image">
-            <figure class="developer-home-image">
-                <img src="assets/dev.jpg" alt="photo of the developer" />
-            </figure>
-        </section>
-
-        <section class="btn-container">
-            <a href="pages/about.html" class="standard-blue-btn">Learn more about me</a>
+            </form>
         </section>
 
     </main>
@@ -80,13 +77,13 @@
         <section>
             <figure id="socials">
                 <a href="https://github.com/jay-parkin">
-                    <img src="assets/github-icon.png" alt="Github Icon" class="socials-icon" /></a>
+                    <img src="../assets/github-icon.png" alt="Github Icon" class="socials-icon" /></a>
 
                 <a href="mailto:jay-parkin91@hotmail.com?This is a subject">
-                    <img src="assets/mail-icon.png" alt="Email Icon" class="socials-icon" /></a>
+                    <img src="../assets/mail-icon.png" alt="Email Icon" class="socials-icon" /></a>
 
                 <a href="https://www.linkedin.com/in/jay-parkin/">
-                    <img src="assets/linkedin-icon.png" alt="linkedin Icon" class="socials-icon" /></a>
+                    <img src="../assets/linkedin-icon.png" alt="linkedin Icon" class="socials-icon" /></a>
             </figure>
         </section>
 
