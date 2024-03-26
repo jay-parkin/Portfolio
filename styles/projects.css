@@ -7,7 +7,7 @@
 }
 
 .project {
-  width: 100%;
+  /* width: 100%; */
   background-color: var(--blue-light);
   margin: 1em;
   margin-bottom: 3em;
