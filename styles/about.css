@@ -22,7 +22,6 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  /* width: clamp(150px, 60%, 350px); */
   border-radius: 5%;
 }
 
@@ -30,20 +29,34 @@
   text-align: left;
 }
 
+/* Custom disc Icons */
+.list-aboutme li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid var(--steel-blue);
+  box-shadow: 0 0 10px var(--steel-blue);
+  position: absolute;
+  margin-left: -1em;
+}
+
 .skill-title {
   color: var(--rich-black);
   font-size: 1.5em;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
 }
 
 ul {
   list-style-type: disc;
   color: var(--rich-black);
   font-size: 1.3rem;
-  border: 5px solid var(--steel-blue);
-  border-radius: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--steel-blue);
+  box-shadow: 0 0 10px var(--steel-blue);
   padding: 10px 30px;
   padding-top: 1.2em;
   margin-left: 1.3em;
@@ -83,19 +96,6 @@ main .skills li {
   justify-content: center;
 }
 
-/* Custom disc Icons */
-.list-aboutme li:before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background: white;
-  border: 2px solid var(--steel-blue);
-  box-shadow: 3px 3px 0px var(--lapis-lazuli);
-  border-radius: 50%;
-  position: absolute;
-  margin-left: -1em;
-}
-
 .skills li:last-child {
   position: relative;
   list-style: none;
@@ -121,11 +121,19 @@ main .skills li {
     box-shadow: 8px 8px var(--lapis-lazuli);
   }
 
+  .list-aboutme {
+    display: flex;
+  }
+
   .dev-pro,
   .edu-per {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .edu-per {
+    flex-direction: column;
   }
 }
