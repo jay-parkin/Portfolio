@@ -23,98 +23,155 @@ The key functionalities and features are as shown below:\
 \
 <b>Functionalities</b>
 
-- Navigation Menu: Users can navigate through different pages of the portfolio using a nav menu located in the header.
-- Toggleable Menu: Users can toggle the visibility of the menu on smaller screens, providing a clean and unobtrusive design.
-- Responsive Design: The website is designed to be responsive, using flexbox and @media queries to respond and fit different screen sizes.
-- Clickable Social Links: Social media icons in the footer are clickable, allowing users to easily access my social profiles.
+- <b>Navigation Menu</b>: Users can navigate through different pages of the portfolio using a nav menu located in the header.
+- <b>Toggleable Menu</b>: Users can toggle the visibility of the menu on smaller screens, providing a clean and unobtrusive design.
+- <b>Responsive Design</b>: The website is designed to be responsive, using flexbox and @media queries to respond and fit different screen sizes.
+- <b>Clickable Social Links</b>: Social media icons in the footer are clickable, allowing users to easily access my social profiles.
 
 \
 <b>Features</b>
 
-- Color Scheme: A consistent color scheme throughout the website, contributing to a professional aesthetic.
-- Image Display: The image of myself adds a personal touch and helps users connect with me on a more personal level.
-- Animated Logo: The spinning animation of the logo adds visual interest and a unique touch to the website.
-- Google Fonts Integration: Google Fonts are intergrated to enhance typography, adding visual appeal to my content.
+- <b>Color Scheme</b>: A consistent color scheme throughout the website, contributing to a professional aesthetic.
+- <b>Image Display</b>: The image of myself adds a personal touch and helps users connect with me on a more personal level.
+- <b>Animated Logo</b>: The spinning animation of the logo adds visual interest and a unique touch to the website.
+- <b>Google Fonts Integration</b>: Google Fonts are intergrated to enhance typography, adding visual appeal to my content.
 
 ## Screenshots
 
-### Home
+### Home - Wireframe / Deployed
 
 #### Mobile
 
 <p float="left">
-  <img src="docs/Page Screenshots/home-mobile.JPG" width="242" />
+    <img src="docs/Wireframes/wf-home-mobile01.JPG" width="242" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/home-mobile.JPG" width="242" />
 </p>
 
 #### Desktop
 
 <p float="left">
-  <img src="docs/Page Screenshots/home-desktop.JPG" width="1920" />
+    <img src="docs/Wireframes/wf-home-desktop01.JPG" width="1920" />
 </p>
 
+<p float="left">
+    <img src="docs/Page Screenshots/home-desktop.JPG" width="1920" />
+</p>
+</br>
+
+#
 
 ### About
 
 #### Mobile
 
 <p float="left">
-  <img src="docs/Page Screenshots/about-mobile01.JPG" width="242" />
-  <img src="docs/Page Screenshots/about-mobile02.JPG" width="242" />
-  <img src="docs/Page Screenshots/about-mobile03.JPG" width="242" />
-  <img src="docs/Page Screenshots/about-mobile04.JPG" width="242" />
+    <img src="docs/Wireframes/wf-about-mobile01.JPG" width="242" />
+    <img src="docs/Wireframes/wf-about-mobile02.JPG" width="242" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/about-mobile01.JPG" width="242" />
+    <img src="docs/Page Screenshots/about-mobile02.JPG" width="242" />
+    <img src="docs/Page Screenshots/about-mobile03.JPG" width="242" />
+    <img src="docs/Page Screenshots/about-mobile04.JPG" width="242" />
 </p>
 
 #### Desktop
 
 <p float="left">
-  <img src="docs/Page Screenshots/about-desktop01.JPG" width="1920" />
+    <img src="docs/Wireframes/wf-about-desktop01.JPG" width="1920" />
+    <img src="docs/Wireframes/wf-about-desktop02.JPG" width="1920" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/about-desktop01.JPG" width="1920" />
     <img src="docs/Page Screenshots/about-desktop02.JPG" width="1920" />
 </p>
+
+#
+
+</br>
 
 ### Projects
 
 #### Mobile
 
 <p float="left">
-  <img src="docs/Page Screenshots/projects-mobile01.JPG" width="242" />
-  <img src="docs/Page Screenshots/projects-mobile02.JPG" width="242" />
+    <img src="docs/Wireframes/wf-projects-mobile01.JPG" width="242" />
+    <img src="docs/Wireframes/wf-projects-mobile02.JPG" width="242" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/projects-mobile01.JPG" width="242" />
+    <img src="docs/Page Screenshots/projects-mobile02.JPG" width="242" />
 </p>
 
 #### Desktop
 
 <p float="left">
-  <img src="docs/Page Screenshots/projects-desktop01.JPG" width="1920" />
+    <img src="docs/Wireframes/wf-projects-desktop01.JPG" width="1920" />
 </p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/projects-desktop01.JPG" width="1920" />
+</p>
+</br>
+
+#
 
 ### Blog
 
 #### Mobile
 
 <p float="left">
-  <img src="docs/Page Screenshots/blog-mobile01.JPG" width="242" />
-  <img src="docs/Page Screenshots/blog-mobile02.JPG" width="242" />
-  <img src="docs/Page Screenshots/blog-mobile03.JPG" width="242" />
-  <img src="docs/Page Screenshots/blog-mobile04.JPG" width="242" />
+    <img src="docs/Wireframes/wf-blog-mobile01.JPG" width="242" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/blog-mobile01.JPG" width="242" />
+    <img src="docs/Page Screenshots/blog-mobile02.JPG" width="242" />
+    <img src="docs/Page Screenshots/blog-mobile03.JPG" width="242" />
+    <img src="docs/Page Screenshots/blog-mobile04.JPG" width="242" />
     <img src="docs/Page Screenshots/blog-mobile05.JPG" width="242" />
 </p>
 
 #### Desktop
 
 <p float="left">
-  <img src="docs/Page Screenshots/blog-desktop01.JPG" width="1920" />
+    <img src="docs/Wireframes/wf-blog-desktop01.JPG" width="1920" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/blog-desktop01.JPG" width="1920" />
     <img src="docs/Page Screenshots/blog-desktop02.JPG" width="1920" />
 </p>
+</br>
+
+#
 
 ### Contact
 
 #### Mobile
 
 <p float="left">
-  <img src="docs/Page Screenshots/contact-mobile01.JPG" width="242" />
+    <img src="docs//Wireframes/wf-contact-mobile01.JPG" width="242" />
+</p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/contact-mobile01.JPG" width="242" />
 </p>
 
 #### Desktop
 
 <p float="left">
-  <img src="docs/Page Screenshots/contact-desktop01.JPG" width="1920" />
+    <img src="docs/Wireframes/wf-contact-desktop01.JPG" width="1920" />
 </p>
+
+<p float="left">
+    <img src="docs/Page Screenshots/contact-desktop01.JPG" width="1920" />
+</p>
+
+#
