@@ -66,7 +66,7 @@ Additional fonts used throughout.
 
 <p float="center">
     <img src="docs/Design/font-madimi-one.JPG" width="1920" />
-    <img src="docs/Design/font-lobster.JPG" width="1920"/>
+    <img src="docs/Design/font-lobster.JPG" width="1920" height=""/>
 </p>
 
 ### Icons - Google
@@ -89,7 +89,8 @@ Many colour palettes were chosen, in the end I've gone with Blue.
 </br>
 
 ## Target Audience
-My portfolio was specifically created to showcase my relevent skills for any recruiters/hiring managers. 
+
+My portfolio was specifically created to showcase my relevent skills for any recruiters/hiring managers.
 This is ideally my first step into gaining a role of a web developer and will act as a sneak peak into what I bring to the table for those dev teams looking top notch talent.
 
 The targetted audience is anyone looking for a entry level developer, whether they are actively searching or just so happen to stumble upon my application.
@@ -99,6 +100,16 @@ So, my portfolio is all about making their job easier by giving them a crystal c
 </br>
 
 ## Tech Stack
+The following tools were used in the process of planning and developing.
+
+- <b>GitHub</b>: Version control.
+- <b>Draw.io</b>: Flow chart designer used to create the sitemap.
+- <b>VS Code</b>: IDE for writing code.
+- <b>HTML</b>: Containing the elements and content of the pages.
+- <b>CSS</b>: Styles the content displayed.
+- <b>Javascript</b>: for interacting with the menu button
+
+</br>
 
 ## Screenshots
 
