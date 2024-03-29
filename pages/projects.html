@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+
+    <!-- Linked for the menu -->
+    <script src="../scripts/script.js"></script>
+
+    <!-- Resourced from Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-------------------------------->
+
+    <link rel="icon" type="image/x-icon" href="../assets/jp-logo-black.ico">
+
+    <title>Jason Parkin | Developer</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Aligned to the left of the header -->
+        <!-- ANimated logo -->
+        <section>
+            <figure>
+                <a href="../index.html" class="logo">
+                    <img src="../assets/logo-jp.png" alt="Logo JP" class="logo-jp" />
+                    <img src="../assets/logo-ring.png" alt="Logo Ring" class="logo-ring" /></a>
+            </figure>
+        </section>
+
+
+        <!-- Aligned to the right of the header -->
+        <nav>
+            <button class="menu-btn">
+                <span id="menu-text" class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
+            </button>
+
+            <!-- Nav menu -->
+            <section id="menu-nav" class="menu-closed">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="title lobster-regular fancy">Projects</h1>
+        </section>
+
+        <!-- Flex container too hold all the projects -->
+        <section class="portfolio">
+
+            <!-- Individual project section -->
+            <section class="project">
+                <a href="https://how2learn.online/"><img src="../assets/how2learn.png" alt="How2Learn Logo"></a>
+                <h2>How2Learn</h2>
+                <p>An enticing educational app designed to encourage children to practice their spelling and progress
+                    through a leveling system of achievements. These achievements will be determined by either their
+                    teachers in class or parents at home. This application mirrors the look, cover, write, check
+                    technique still taught at schools.
+                </p>
+            </section>
+
+            <section class="project">
+                <img src="../assets/QR Console.png" alt="QR Console Logo">
+                <h2>QR Payroll System</h2>
+                <p>Utilising mobile applications to digitalise a company's payroll system. Gathers employee information
+                    from a mobile app and displays live data to the payroll officer. Currently being deployed at 6
+                    locations across 3 states.</p>
+            </section>
+
+            <section class="project">
+                <img src="../assets/world-map.png" alt="RPG World Logo">
+                <h2>RPG World</h2>
+                <p>A 2D RPG World I was working on. Built with individual image tiles to create a completely unqiue map
+                    for each level. Inspired by Castle of the Winds.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Quicks to each of my socials -->
+        <section>
+            <figure id="socials">
+                <a href="https://github.com/jay-parkin">
+                    <img src="../assets/github-icon.png" alt="Github Icon" class="socials-icon" /></a>
+
+                <a href="mailto:jay-parkin91@hotmail.com?This is a subject">
+                    <img src="../assets/mail-icon.png" alt="Email Icon" class="socials-icon" /></a>
+
+                <a href="https://www.linkedin.com/in/jay-parkin/">
+                    <img src="../assets/linkedin-icon.png" alt="linkedin Icon" class="socials-icon" /></a>
+            </figure>
+        </section>
+
+        <h6>Cheers, Jason Parkin 2024</h6>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/about.css">
+
+    <!-- Linked for the menu -->
+    <script src="../scripts/script.js"></script>
+
+    <!-- Resourced from Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-------------------------------->
+
+    <link rel="icon" type="image/x-icon" href="../assets/jp-logo-black.ico">
+
+    <title>Jason Parkin | Developer</title>
+</head>
+
+<body>
+    <header>
+        <!-- Animated logo -->
+        <section>
+            <figure>
+                <a href="../index.html" class="logo">
+                    <img src="../assets/logo-jp.png" alt="Logo JP" class="logo-jp" /><img src="../assets/logo-ring.png"
+                        alt="Logo Ring" class="logo-ring" /></a>
+            </figure>
+        </section>
+
+
+        <!-- Aligned to the right of the header -->
+        <nav>
+            <button class="menu-btn">
+                <span id="menu-text" class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
+            </button>
+
+            <!-- Nav menu -->
+            <section id="menu-nav" class="menu-closed">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="title lobster-regular fancy">About Me</h1>
+        </section>
+
+        <section class="main-bio">
+            <!-- More about me -->
+            <section class="bio-aboutme">
+                <p id="about-me-1">Allow me to introduce myself - I'm Jason, a passionate software developer with a
+                    knack
+                    for turning ideas
+                    into reality. With a treasure trove of experience in full-stack development, software design, and
+                    problem-solving, I'm here to extend my reaches into the career of web-development.
+                </p>
+
+                </br>
+
+                <p id="about-me-2">I have worked in the field of IT for the past 10 years but since 2019 I have found
+                    myself
+                    seeking to
+                    enhance my skills by completing small courses surrounding myself in Java.
+                    December 2023 I completed a Post-graduate Degree in IT at the University of Newcastle majoring in
+                    Java,
+                    SQL, Javascript & HTML/CSS, and by Feburary 2024 I started a Diploma of Education at CoderAcademy
+                    Australia delivered as a Bootcamp.
+                </p>
+
+                <!-- Link to resume -->
+                <section class="btn-container">
+                    <a href="../assets/jason-parkin-resume.pdf" class="standard-blue-btn">Resume</a>
+                </section>
+
+                </br>
+
+                <p id="about-me-3">Besides work.. if I'm not spending time with my young kids, I'm drowning myself in
+                    games,
+                    darts or
+                    smoking meat.</p>
+            </section>
+
+            <!-- Include images of my code, my bbq setup and maybe gaming rig -->
+            <section class="bio-images">
+                <figure class="bio-darts">
+                    <img src="../assets/myself-darts.JPG" alt="myself playing darts" />
+                </figure>
+
+                <figure class="bio-smoker">
+                    <img src="../assets/vertical-smoker.JPG" alt="photo of the developer" />
+                </figure>
+            </section>
+        </section>
+
+        <!-- Built with design references from past students work -->
+        <section class="list-aboutme">
+            <section class="dev-pro">
+                <section class="skills">
+                    <h3 class="skill-title">DEVELOPMENT SKILLS</h3>
+                    <ul>
+                        <li>
+                            <div class="sub-list"><b>Web Fundamentals</b></div>
+                            <p class="list">
+                                Git
+                                </br>
+                                Markdown
+                                </br>
+                                Wireframing
+                                </br>
+                                HTML
+                                </br>
+                                CSS
+                                </br>
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="sub-list"><b>Front End</b></div>
+                            <p class="list">
+                                Java
+                                </br>
+                                Javascript
+                                </br>
+                                Python
+                                </br>
+                                React
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="sub-list"><b>Back End</b></div>
+                            <p class="list">
+                                SQL
+                                </br>
+                                Node.js
+                                </br>
+                                Flask
+                                </br>
+                                MongoDB
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="skills">
+                    <h3 class="skill-title">EDUCATION</h3>
+                    <ul>
+                        <li>
+                            <div class="sub-list"><b>2024</b></div>
+                            <p class="list">
+                                Diploma of IT (Web Development Bootcamp) @ CoderAcademy
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="sub-list"><b>2023</b></div>
+                            <p class="list">
+                                Post-graduate of IT @ University of Newcastle
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="sub-list"><b>2019</b></div>
+                            <p class="list">
+                                Undergraduate: Java Programming @ RMIT University
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="sub-list"><b>2013</b></div>
+                            <p class="list">
+                                Diploma in Film/TV @ JMC Academy Sydney
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+
+            </section>
+
+            <section class="edu-per">
+                <section class="skills">
+
+                    <h3 class="skill-title">PROFESSIONAL</h3>
+                    <ul>
+                        <li>
+                            <div class="sub-list"><b>Apr 2012 - Present</b></div>
+                            <p class="list">
+                                IT Specialist @ JB Metropolitan Distributors
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="skills">
+                    <h3 class="skill-title">PERSONAL VALUES</h3>
+                    <ul>
+                        <li>
+                            <div class="sub-list">Commitment</div>
+                        </li>
+                        <li>
+                            <div class="sub-list">Communication</div>
+                        </li>
+                        <li>
+                            <div class="sub-list">Respect</div>
+                        </li>
+                        <li>
+                            <div class="sub-list">Understanding</div>
+                        </li>
+                        <li>
+                            <div class="sub-list">Trust</div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <!-- Quicks to each of my socials -->
+        <section>
+            <figure id="socials">
+                <a href="https://github.com/jay-parkin">
+                    <img src="../assets/github-icon.png" alt="Github Icon" class="socials-icon" /></a>
+
+                <a href="mailto:jay-parkin91@hotmail.com?This is a subject">
+                    <img src="../assets/mail-icon.png" alt="Email Icon" class="socials-icon" /></a>
+
+                <a href="https://www.linkedin.com/in/jay-parkin/">
+                    <img src="../assets/linkedin-icon.png" alt="linkedin Icon" class="socials-icon" /></a>
+            </figure>
+        </section>
+
+        <h6>Cheers, Jason Parkin 2024</h6>
+    </footer>
+
+
+</body>
+
+</html>

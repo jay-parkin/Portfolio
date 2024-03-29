@@ -1,0 +1,139 @@
+.main-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-aboutme {
+  text-align: left;
+}
+
+.bio-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-darts img,
+.bio-smoker img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.list-aboutme li {
+  text-align: left;
+}
+
+/* Custom disc Icons */
+.list-aboutme li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid var(--steel-blue);
+  box-shadow: 0 0 10px var(--steel-blue);
+  position: absolute;
+  margin-left: -1em;
+}
+
+.skill-title {
+  color: var(--rich-black);
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style-type: disc;
+  color: var(--rich-black);
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: 2px solid var(--steel-blue);
+  box-shadow: 0 0 10px var(--steel-blue);
+  padding: 10px 30px;
+  padding-top: 1.2em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  margin-bottom: 2em;
+}
+
+ul:hover {
+  box-shadow: 8px 8px var(--lapis-lazuli);
+}
+
+.sub-list {
+  padding-left: 1rem;
+}
+
+.list {
+  line-height: 1.4rem;
+  margin-top: 0.5em;
+  padding-bottom: 1rem;
+}
+
+main .skills li {
+  position: relative;
+  list-style: none;
+  border-left: 3px solid var(--steel-blue);
+
+  padding-bottom: 1rem;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.dev-pro,
+.edu-per {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills li:last-child {
+  position: relative;
+  list-style: none;
+  border-left: 0px solid white;
+  padding-bottom: 1.4rem;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .main-bio {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bio-aboutme {
+    width: 80%;
+  }
+
+  .bio-darts img,
+  .bio-smoker img {
+    box-shadow: 8px 8px var(--lapis-lazuli);
+  }
+
+  .list-aboutme {
+    display: flex;
+  }
+
+  .dev-pro,
+  .edu-per {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .edu-per {
+    flex-direction: column;
+  }
+}

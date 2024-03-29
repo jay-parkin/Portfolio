@@ -1,0 +1,312 @@
+:root {
+  /* CSS HEX */
+  /* --cherry-blossom-pink: #edafb8ff;
+  --champagne-pink: #f7e1d7ff;
+  --timberwolf: #dedbd2ff;
+  --ash-gray: #b0c4b1ff;
+  --outer-space: #4a5759ff; */
+
+  /* CSS HEX Blue */
+  /* --federal-blue: #03045eff;
+  --honolulu-blue: #0077b6ff;
+  --pacific-cyan: #00b4d8ff;
+  --non-photo-blue: #90e0efff;
+  --light-cyan: #caf0f8ff; */
+
+  /* CSS HEX Darker Blue */
+  --picton-blue: #00a6fbff;
+  --steel-blue: #0582caff;
+  --lapis-lazuli: #006494ff;
+  --prussian-blue: #003554ff;
+  --rich-black: #051923ff;
+
+  /* 
+  light cyan font on honolulu
+  non photo blue shadows
+  */
+
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: var(--rich-black);
+
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--lapis-lazuli);
+  height: 10vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--rich-black);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Creates a logo with a spinning animation */
+.logo-jp,
+.logo-ring {
+  top: 0.8em;
+  left: 1em;
+  height: 7vh;
+  position: absolute;
+}
+
+.logo-ring {
+  z-index: 2;
+  animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+nav {
+  width: 40vw;
+  margin-right: 25px;
+  color: var(--light-cyan);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition-duration: 0.5s;
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.nav-link:hover {
+  background-color: var(--picton-blue);
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.menu-btn {
+  display: flex;
+  background: transparent;
+  border: none;
+  z-index: 100;
+  width: 100%;
+}
+
+/* Style the google font menu */
+.menu-btn .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 3rem;
+  max-width: 50px;
+  margin-left: auto;
+  color: white;
+  opacity: 70%;
+}
+
+.menu-btn .material-symbols-outlined:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.menu-closed {
+  display: none;
+  background-color: var(--steel-blue);
+  opacity: 90%;
+  border-radius: 20px;
+  width: 40vw;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+main {
+  margin-top: 10vh;
+  min-height: 80vh;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+main > * {
+  margin: 1em;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.intro-personal {
+  max-width: 90%;
+  margin-bottom: 3em;
+}
+
+.home-image {
+  width: 80vw;
+}
+
+.developer-home-image img {
+  width: clamp(180px, 60%, 350px);
+  border-radius: 5%;
+  box-shadow: 8px 8px var(--lapis-lazuli);
+}
+
+.btn-container {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.standard-blue-btn {
+  color: var(--rich-black);
+  font-size: 1.3rem;
+  border: none;
+  border: 5px solid var(--steel-blue);
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 8px 8px var(--lapis-lazuli);
+}
+
+.standard-blue-btn:hover {
+  background-color: var(--picton-blue);
+  cursor: pointer;
+  opacity: 70%;
+}
+
+footer {
+  background-color: var(--lapis-lazuli);
+  color: var(--light-cyan);
+  height: 10dvh;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-icon {
+  max-height: 5dvh;
+}
+
+h6 {
+  color: white;
+}
+
+/* set title fonts */
+.title {
+  font-size: 3rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fancy {
+  position: relative;
+  white-space: nowrap;
+  &:after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%230582ca' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-closed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  footer {
+    height: 10vh;
+  }
+
+  .logo-jp,
+  .logo-ring {
+    top: 0.8em;
+    left: 1em;
+    height: 7vh;
+    position: absolute;
+  }
+}
+
+/*
+Bring out the nav links on desktop view 
+Set a word wrap length on desktop 60% - 70%
+
+.menu-closed {
+    display: none;
+    background-color: #7e8d85;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 40vw;
+}
+Width needs to change for desktop view
+*/

@@ -1,0 +1,43 @@
+.portfolio {
+  /* width: 100%; */
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  width: 100%;
+  background-color: var(--blue-light);
+  margin-bottom: 3em;
+
+  border-radius: 10px;
+  border: 2px solid var(--steel-blue);
+  box-shadow: 0 0 10px var(--steel-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project img {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 500px) {
+  .portfolio {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 3;
+  }
+
+  .project {
+    width: 30%;
+    margin: 1em;
+  }
+}
