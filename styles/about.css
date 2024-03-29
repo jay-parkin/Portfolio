@@ -105,7 +105,7 @@ main .skills li {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 850px) {
   .main-bio {
     flex-direction: row;
     align-items: center;

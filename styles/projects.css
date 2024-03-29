@@ -27,7 +27,7 @@
   border: 1px solid black;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .portfolio {
     width: 100%;
     flex-direction: row;
