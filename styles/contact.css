@@ -25,6 +25,17 @@ main {
   margin-bottom: 1em;
 }
 
+.submit-btn {
+  color: var(--rich-black);
+  font-size: 1.3rem;
+  border: none;
+  border: 5px solid var(--steel-blue);
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 8px 8px var(--lapis-lazuli);
+  opacity: 40%;
+}
+
 .field {
   font-size: 1rem;
   height: 3em;
