@@ -1,127 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/projects.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/projects.css" />
 
     <!-- Linked for the menu -->
     <script src="../scripts/script.js"></script>
 
     <!-- Resourced from Google Fonts -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <!-------------------------------->
 
-    <link rel="icon" type="image/x-icon" href="../assets/jp-logo-black.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/jp-logo-black.ico" />
 
     <title>Jason Parkin | Developer</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <!-- Aligned to the left of the header -->
-        <!-- ANimated logo -->
-        <section>
-            <figure>
-                <a href="../index.html" class="logo">
-                    <img src="../assets/logo-jp.png" alt="Logo JP" class="logo-jp" />
-                    <img src="../assets/logo-ring.png" alt="Logo Ring" class="logo-ring" /></a>
-            </figure>
+      <!-- Aligned to the left of the header -->
+      <!-- ANimated logo -->
+      <section>
+        <figure>
+          <a href="../index.html" class="logo">
+            <img src="../assets/logo-jp.png" alt="Logo JP" class="logo-jp" />
+            <img
+              src="../assets/logo-ring.png"
+              alt="Logo Ring"
+              class="logo-ring"
+          /></a>
+        </figure>
+      </section>
+
+      <!-- Aligned to the right of the header -->
+      <nav>
+        <button class="menu-btn">
+          <span
+            id="menu-text"
+            class="material-symbols-outlined"
+            onclick="toggleMenu()"
+            >menu</span
+          >
+        </button>
+
+        <!-- Nav menu -->
+        <section id="menu-nav" class="menu-closed">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </section>
-
-
-        <!-- Aligned to the right of the header -->
-        <nav>
-            <button class="menu-btn">
-                <span id="menu-text" class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
-            </button>
-
-            <!-- Nav menu -->
-            <section id="menu-nav" class="menu-closed">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </section>
-        </nav>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h1 class="title lobster-regular fancy">Projects</h1>
+      <section>
+        <h1 class="title lobster-regular fancy">Projects</h1>
+      </section>
+
+      <!-- Flex container too hold all the projects -->
+      <section class="portfolio">
+        <!-- Individual project section -->
+        <section class="project">
+          <a href="https://github.com/jay-parkin/API-Webserver"
+            ><img src="../assets/apiserver.JPG" alt="API-Webserver Logo"
+          /></a>
+          <h2>API-Webserver - Income & Expense</h2>
+          <p>
+            The Income & Expense System API is a powerful tool that makes it
+            easy to manage both personal and shared finances. It allows users to
+            effortlessly track and organise their expenses across different
+            accounts, with a strong emphasis on flexibility, security, and
+            detailed categorisation..
+          </p>
         </section>
 
-        <!-- Flex container too hold all the projects -->
-        <section class="portfolio">
-
-            <!-- Individual project section -->
-            <section class="project">
-                <a href="https://github.com/jay-parkin/API-Webserver"><img src="../assets/apiserver.JPG"
-                        alt="API-Webserver Logo"></a>
-                <h2>API-Webserver - Income & Expense</h2>
-                <p>The Income & Expense System API is a powerful tool that makes it easy to manage both personal and
-                    shared finances. It allows users to effortlessly track and organise their expenses across different
-                    accounts, with a strong emphasis on flexibility, security, and detailed categorisation..</p>
-            </section>
-
-            <section class="project">
-                <a href="https://github.com/jay-parkin/Terminal-App-Python"><img src="../assets/digital_dish.png"
-                        alt="Digital Dish Logo"></a>
-                <h2>Digital Dish - Terminal</h2>
-                <p>Digital Dish is like having a personal assistant for food lovers and home cooks. It’s designed in
-                    Python to be user-friendly and packed with great features that make managing, finding, and cooking
-                    amazing recipes a breeze.</p>
-            </section>
-
-            <section class="project">
-                <a href="https://how2learn.online/"><img src="../assets/how2learn.png" alt="How2Learn Logo"></a>
-                <h2>How2Learn</h2>
-                <p>An enticing educational app designed to encourage children to practice their spelling and progress
-                    through a leveling system of achievements. These achievements will be determined by either their
-                    teachers in class or parents at home. This application mirrors the look, cover, write, check
-                    technique still taught at schools.
-                </p>
-            </section>
-
-            <section class="project">
-                <img src="../assets/QR Console.png" alt="QR Console Logo">
-                <h2>QR Payroll System</h2>
-                <p>Utilising mobile applications to digitalise a company's payroll system. Gathers employee information
-                    from a mobile app and displays live data to the payroll officer. Currently being deployed at 6
-                    locations across 3 states.</p>
-            </section>
-
-
+        <section class="project">
+          <a href="https://github.com/jay-parkin/Terminal-App-Python"
+            ><img src="../assets/digital_dish.png" alt="Digital Dish Logo"
+          /></a>
+          <h2>Digital Dish - Terminal</h2>
+          <p>
+            Digital Dish is like having a personal assistant for food lovers and
+            home cooks. It’s designed in Python to be user-friendly and packed
+            with great features that make managing, finding, and cooking amazing
+            recipes a breeze.
+          </p>
         </section>
+
+        <section class="project">
+          <a href="https://github.com/jay-parkin/spelling-words-vitereact"
+            ><img src="../assets/how2learn.png" alt="How2Learn Logo"
+          /></a>
+          <h2>How2Learn</h2>
+          <p>
+            An enticing educational app designed to encourage children to
+            practice their spelling and progress through a leveling system of
+            achievements. These achievements will be determined by either their
+            teachers in class or parents at home. This application mirrors the
+            look, cover, write, check technique still taught at schools.
+          </p>
+        </section>
+
+        <section class="project">
+          <a href="https://github.com/jay-parkin/DartScoreboard"
+            ><img
+              src="../assets/dartboard-main.png"
+              alt="Dart Scoreboard Screen"
+          /></a>
+          <h2>Dart Scoreboard</h2>
+          <p>
+            This darts scoreboard app is a sleek and efficient tool for managing
+            scores in the popular "501" darts game format. It features real-time
+            score tracking, automatic dart average calculations, and tools to
+            start new games or legs effortlessly. The app includes safeguards
+            against invalid inputs, like unreachable finishes or overly high
+            scores, ensuring smooth gameplay
+          </p>
+        </section>
+
+        <section class="project">
+          <a href="https://github.com/jay-parkin/Password"
+            ><img src="../assets/password-console.png" alt="Password Console"
+          /></a>
+          <h2>Password Generator</h2>
+          <p>
+            This Java application is a Password Generator Tool built with the
+            Swing library for a graphical user interface (GUI). It allows users
+            to generate secure random passwords of specified lengths, generate
+            multiple passwords at once, and copy them to the clipboard. The user
+            can define the password length using a spinner and specify the
+            number of passwords to generate.
+          </p>
+        </section>
+
+        <section class="project">
+          <a href="https://github.com/jay-parkin/Brew-It-Mod-1.19"
+            ><img src="../assets/brewit-mod.jpg" alt="brewit-mod"
+          /></a>
+          <h2>Minecraft Brewing Mod</h2>
+          <p>
+            Brew It with Minecraft This mod will add a range of new features
+            that include:
+            <li>Farming Hops & Barley</li>
+            <li>Fermenting Wort</li>
+            <li>Brewing Beer</li>
+            <li>Pouring Drinks</li>
+            <li>Selling production to the local village</li>
+          </p>
+        </section>
+
+        <section class="project">
+          <img src="../assets/QR Console.png" alt="QR Console Logo" />
+          <h2>QR Payroll System</h2>
+          <p>
+            Utilising mobile applications to digitalise a company's payroll
+            system. Gathers employee information from a mobile app and displays
+            live data to the payroll officer. Currently being deployed at 6
+            locations across 3 states.
+          </p>
+        </section>
+      </section>
     </main>
 
     <footer>
-        <!-- Quicks to each of my socials -->
-        <section>
-            <figure id="socials">
-                <a href="https://github.com/jay-parkin">
-                    <img src="../assets/github-icon.png" alt="Github Icon" class="socials-icon" /></a>
+      <!-- Quicks to each of my socials -->
+      <section>
+        <figure id="socials">
+          <a href="https://github.com/jay-parkin">
+            <img
+              src="../assets/github-icon.png"
+              alt="Github Icon"
+              class="socials-icon"
+          /></a>
 
-                <a href="mailto:jay-parkin91@hotmail.com?This is a subject">
-                    <img src="../assets/mail-icon.png" alt="Email Icon" class="socials-icon" /></a>
+          <a href="mailto:jay-parkin91@hotmail.com?This is a subject">
+            <img
+              src="../assets/mail-icon.png"
+              alt="Email Icon"
+              class="socials-icon"
+          /></a>
 
-                <a href="https://www.linkedin.com/in/jay-parkin/">
-                    <img src="../assets/linkedin-icon.png" alt="linkedin Icon" class="socials-icon" /></a>
-            </figure>
-        </section>
+          <a href="https://www.linkedin.com/in/jay-parkin/">
+            <img
+              src="../assets/linkedin-icon.png"
+              alt="linkedin Icon"
+              class="socials-icon"
+          /></a>
+        </figure>
+      </section>
 
-        <h6>Cheers, Jason Parkin 2024</h6>
+      <h6>Cheers, Jason Parkin 2024</h6>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
